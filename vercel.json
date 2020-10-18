@@ -1,0 +1,9 @@
+{
+    "name": "time-api",
+    "version": 2,
+    "routes": [{
+        "src": "/(.*)",
+        "headers": { "cache-control": "no-cache, no-store, must-revalidate", "Access-Control-Allow-Origin": "*", "Open-Source": "https://github.com/cachecleanerjeet/time-api" },
+        "dest": "/api"
+    }]
+}
