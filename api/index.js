@@ -11,7 +11,7 @@ module.exports = async(req, res) => {
             res.json({ result: 'false' });
         } else {
             var unix = Number(response.body) + Number('19800');
-            var timem = moment.unix(unix);
+            var timem = moment.unix(unix).locale('en-in');
             res.json({
                 timezone: 'Asia/Kolkata',
                 unixtime: unix,
